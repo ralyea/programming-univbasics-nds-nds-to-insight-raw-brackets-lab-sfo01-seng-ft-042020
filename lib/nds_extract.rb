@@ -2,6 +2,21 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def directors_totals(nds)
+  total = 0
+row_index = 0
+while row_index < guessing_game_grid.count do
+  element_index = 0
+  while element_index < guessing_game_grid[row_index].count do
+    total += guessing_game_grid[row_index][element_index]
+    element_index += 1
+  end
+  row_index += 1
+end
+  
+  
+  
+  
+  
   # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
   #
