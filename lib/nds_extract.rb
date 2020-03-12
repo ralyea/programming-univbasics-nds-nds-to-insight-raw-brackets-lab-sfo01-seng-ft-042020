@@ -34,7 +34,7 @@ def directors_totals(nds)
    director_list
  end
  
- 
+ def total_gross(source)
  
   
   
