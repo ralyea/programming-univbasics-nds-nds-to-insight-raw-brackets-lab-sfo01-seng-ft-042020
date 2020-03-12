@@ -2,14 +2,16 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def directors_totals(nds)
-  total_gross_of_earnings = 0
-  director_index = 0
+  def directors_totals(source)
+   result = {}
+   director_index = 0
   while director_index < source.size do
-     total_gross_of_earnings += gross_for_director( source[director_index] )
-     director_index += 1
-   end
- total_gross_of_earnings
- end  
+    director = source[director_index]
+    result[director[:name]] = gross_for_director(director)
+    director_index += 1
+  end
+   result
+ end
   
   
   
