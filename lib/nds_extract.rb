@@ -10,7 +10,7 @@ def directors_totals(nds)
     director_index += 1
   end
    result
- end
+ 
   
   
   
@@ -31,5 +31,5 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  nil
+
 end
